@@ -1,0 +1,6 @@
+#/bin/bash
+
+sudo ip tuntap add mode tap name tap0
+
+sudo ip addr add 192.168.10.1/24 dev tap0
+sudo ip link set dev tap0 up
